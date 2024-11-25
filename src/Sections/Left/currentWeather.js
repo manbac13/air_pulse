@@ -24,7 +24,6 @@ const CurrentWeather = () => {
   const [refreshStatus, setRefreshStatus] = useState(false);
 
   const handleRefresh = () => {
-    console.log("location", location);
     getCurrentWeatherDataAction(refreshObject);
     getAqiAction(refreshObject);
     getForecastAction(refreshObject);
@@ -94,8 +93,7 @@ const CurrentWeather = () => {
               {weatherIcon(currentWeather?.weather[0]?.main, 60)}
               <Typography
                 sx={{
-                  // fontSize: "40px",
-                  fontSize: { xs: "30px", sm: "35px", md: "16px", lg: "40px" },
+                  fontSize: { xs: "30px", sm: "35px", md: "38px", lg: "40px" },
                   fontWeight: "500",
                 }}
               >

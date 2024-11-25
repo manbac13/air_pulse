@@ -11,7 +11,7 @@ const SunSummary = () => {
       <Stack spacing={1}>
         <Typography
           sx={{
-            fontSize: "14px",
+            fontSize: { xs: "12px", md: "14px" },
             color: theme.palette.grey[700],
             fontWeight: "600",
           }}
@@ -21,7 +21,7 @@ const SunSummary = () => {
 
         <Stack direction={"row"} justifyContent={"space-between"}>
           <Stack spacing={1}>
-            <WiSunrise size={30} color={theme.palette.warning.light}/>
+            <WiSunrise size={30} color={theme.palette.warning.light} />
             <Typography
               sx={{
                 fontSize: "14px",
@@ -33,7 +33,7 @@ const SunSummary = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: "20px",
+                fontSize: { xs: "16px", sm: "20px" },
                 fontWeight: "600",
               }}
             >
@@ -42,7 +42,7 @@ const SunSummary = () => {
           </Stack>
 
           <Stack spacing={1}>
-            <WiSunset size={30} color={theme.palette.warning.light}/>
+            <WiSunset size={30} color={theme.palette.warning.light} />
             <Typography
               sx={{
                 fontSize: "14px",
@@ -54,7 +54,7 @@ const SunSummary = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: "20px",
+                fontSize: { xs: "16px", sm: "20px" },
                 fontWeight: "600",
               }}
             >

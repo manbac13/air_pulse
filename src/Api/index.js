@@ -2,7 +2,7 @@ import axios from "axios";
 import { api_key } from "../config";
 
 const instance = axios.create({
-  baseURL: "http://api.openweathermap.org/",
+  baseURL: "https://api.openweathermap.org/",
 });
 
 instance.interceptors.request.use(
